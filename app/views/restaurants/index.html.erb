@@ -1,0 +1,9 @@
+<h1>List of Restaurants</h1>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant.name %> | <%= restaurant.rating %> <% restaurant.rating.to_i.times do %>
+        <%= "*" %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
